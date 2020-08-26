@@ -7,12 +7,13 @@ arch=('any')
 url="https://github.com/le0me55i/vidoas"
 license=('BSD')
 depends=('opendoas' 'pam')
+optdepends=('opendoas-sudo')
 makedepends=('git')
 provides=('vidoas')
 conflicts=('vidoas')
 backup=(etc/doas.conf)
 source=('vidoas::git+https://github.com/le0me55i/vidoas.git')
-sha256sums=(SKIP)
+md5sums=('SKIP')
 
 package() {
 	cd "$pkgname"
